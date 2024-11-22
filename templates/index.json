@@ -14,7 +14,7 @@
       "settings": {
         "title": "Featured collection",
         "collection": "snow-boards",
-        "autoplay": true
+        "autoplay": false
       }
     },
     "image_banner": {
