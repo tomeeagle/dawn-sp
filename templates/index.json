@@ -13,7 +13,8 @@
       "type": "featured-collection-slider",
       "settings": {
         "title": "Featured collection",
-        "collection": "snow-boards"
+        "collection": "snow-boards",
+        "autoplay": true
       }
     },
     "image_banner": {
