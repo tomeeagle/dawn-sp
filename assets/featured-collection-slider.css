@@ -56,6 +56,38 @@
   line-height: normal;
 }
 
+.featured-collection-slider .featured-collection-slider__item .card__description {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.featured-collection-slider .featured-collection-slider__item .price {
+  display: none;
+}
+
+.featured-collection-slider .featured-collection-slider__item .quick-add__submit {
+  height: 39px;
+  border-radius: 0px 0px 10px 10px;
+  background: #8ff695;
+  color: #000;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.featured-collection-slider .featured-collection-slider__item .quick-add__submit:hover {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.featured-collection-slider .featured-collection-slider__item .quick-add__submit:after {
+  box-shadow: none;
+}
+
 .featured-collection-slider .featured-collection-slider__item .card__media {
   --border-radius: 20px;
 }
