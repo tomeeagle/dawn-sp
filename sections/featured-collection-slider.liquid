@@ -17,8 +17,6 @@
           {
             "cellAlign": "left",
             "prevNextButtons": false,
-            "freeScroll": true,
-            "wrapAround": true,
             "autoPlay": {{ section.settings.autoplay }}
           }
         '
@@ -27,7 +25,10 @@
       >
         {% for product in collection.products %}
           <div class="featured-collection-slider__item">
-            {% render 'card-product', card_product: product %}
+            {% render 'card-product', 
+              card_product: product,
+              quick_add: 'standard' 
+            %}
           </div>
         {% endfor %}
       </div>
