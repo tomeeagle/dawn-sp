@@ -6,31 +6,31 @@
 
 {% assign collection = collections[section.settings.collection] %}
 {% if collection %}
-  <div class="page-width">
-    <div class="section-header text-center">
-      <h2>{{ section.settings.title }}</h2>
-    </div>
+  <div class="featured-collection-slider-section">
+    <div class="page-width">
+      <div class="section-header text-center">
+        <h2>{{ section.settings.title }}</h2>
+        <a class="collection-link" href="{{ collection.url }}">View all</a>
+      </div>
 
-    <div class="featured-collection-slider">
-      <div
-        data-flickity='
-          {
-            "cellAlign": "left",
-            "prevNextButtons": false,
-            "autoPlay": {{ section.settings.autoplay }}
-          }
-        '
-        id="featuredCollectionSlider"
-        class="featured-collection-slider__wrapper"
-      >
-        {% for product in collection.products %}
-          <div class="featured-collection-slider__item">
-            {% render 'card-product', 
-              card_product: product,
-              quick_add: 'standard' 
-            %}
-          </div>
-        {% endfor %}
+      <div class="featured-collection-slider">
+        <div
+          data-flickity='
+            {
+              "cellAlign": "left",
+              "prevNextButtons": false,
+              "autoPlay": {{ section.settings.autoplay }}
+            }
+          '
+          id="featuredCollectionSlider"
+          class="featured-collection-slider__wrapper"
+        >
+          {% for product in collection.products %}
+            <div class="featured-collection-slider__item">
+              {% render 'card-product', card_product: product, quick_add: 'standard', media_aspect_ratio: 'landscape' %}
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
